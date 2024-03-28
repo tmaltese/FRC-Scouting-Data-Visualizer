@@ -5,7 +5,7 @@ import requests
 
 def fetch_teams(event_code):
     url = f"https://www.thebluealliance.com/api/v3/event/{event_code}/teams/simple"
-    headers = {"X-TBA-Auth-Key": "q8HekR2QBhtKtqqwY8dTP8MHIp3X2lR05R8FekCBg7RlwbqMeNtfdt7V5zffYw9i"}
+    headers = {"X-TBA-Auth-Key": "YOUR API KEY"}
     response = requests.get(url, headers=headers)
     if response.status_code == 200:
         teams = response.json()
