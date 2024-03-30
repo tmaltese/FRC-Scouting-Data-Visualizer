@@ -6,14 +6,14 @@ df = pd.read_csv("matchscouting_frc8588_2024njall_1711678380414.csv")
 
 # Dictionary to store grouped field options
 field_options = {
-    'Autonomous': ['totalAutoNotes', 'autoSpeaker'],
-    'Teleop': ['totalTeleopNotes', 'teleopSource', 'teleopFloor', 'teleopAmp', 'teleopSpeaker'],
-    'Other': ['totalNotes', 'contributedPoints', 'reliabilityFactor']
+    'A': ['totalAutoNotes', 'autoSpeaker'],
+    'T': ['totalTeleopNotes', 'teleopSource', 'teleopFloor', 'teleopAmp', 'teleopSpeaker'],
+    'O': ['totalNotes', 'contributedPoints', 'reliabilityFactor']
 }
 
 # Prompt the user to select a field
-print("Select a field to display (Autonomous, Teleop, Other):")
-selected_group = input("Enter the field group: ").strip()
+print("Select a field to display (A for Autonomous, T for Teleop, O for Other):")
+selected_group = input("Enter the field group: ").strip().upper()
 
 # Validate user input for group selection
 if selected_group not in field_options:
