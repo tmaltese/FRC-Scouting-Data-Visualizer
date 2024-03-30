@@ -14,7 +14,7 @@ To install all of the necessary libraries, use the following commands in termina
 - pip install pandas
 - pip install requests          (to import the team list and other data from The Blue Alliance)
 
--**Data from CSV**-
+-**Data from CSV Folder**-
 
 - This file pulls from a CSV file, either from scouting data from a specific team, or ScoutRadioz data
 - The user inputs the category of data that they are looking to view
