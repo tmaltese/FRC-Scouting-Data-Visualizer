@@ -28,4 +28,4 @@ To install all of the necessary libraries, use the following commands in termina
 
 To install all of the necessary libraries, use the following commands in terminal:
 - pip install pandas
-- pip instal plotly.express (to graph the data in a bar chart)
+- pip install plotly.express (to graph the data in a bar chart)
