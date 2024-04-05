@@ -2,12 +2,12 @@ import pandas as pd
 import plotly.graph_objects as go
 
 # Read data from the CSV file
-df = pd.read_csv("matchscouting_frc8588_2024njall_1711678380414.csv")
+df = pd.read_csv("2024MRCMP_DAY1.csv")
 
 # Dictionary to store grouped field options
 field_options = {
     'A': ['totalAutoNotes', 'autoSpeaker'],
-    'T': ['totalTeleopNotes', 'teleopSource', 'teleopFloor', 'teleopAmp', 'teleopSpeaker'],
+    'T': ['totalTeleopNotes', 'teleopSource', 'teleopFloor', 'teleopAmp', 'teleopSpeaker', 'teleopPass'],
     'O': ['totalNotes', 'contributedPoints', 'reliabilityFactor']
 }
 
